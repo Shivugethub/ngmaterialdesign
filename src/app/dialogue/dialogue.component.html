@@ -1,0 +1,19 @@
+<h2 mat-dialog-title>{{formTitle}}</h2>
+
+<mat-dialog-content [formGroup]="form">
+
+  <mat-form-field>
+    <input matInput placeholder="Type Name here" formControlName="name">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Type here" formControlName="description">
+  </mat-form-field>
+
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button class="mat-raised-button" (click)='dialogref.close()'>Close</button>
+  <button class="mat-raised-button mat-primary" (click)="onSubmit()">Save</button>
+</mat-dialog-actions>
+
