@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import {SelectionModel} from '@angular/cdk/collections';
 import {MatTableDataSource} from '@angular/material/table';
+
 
 export interface PeriodicElement {
   name: string;
@@ -35,6 +36,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrls: ['./table.component.css']
 })
 export class TableComponent implements OnInit {
+  @Input() name:string;
   data = Object.assign( ELEMENT_DATA);
   displayedColumns: string[] = ['select', 'position', 'name', 'symbol'];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);

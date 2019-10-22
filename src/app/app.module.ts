@@ -19,17 +19,18 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import { NavigationbarComponent } from './navigationbar/navigationbar.component';
+import { NavigationbarComponent } from './components/navigationbar/navigationbar.component';
 import { AppComponent } from './app.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { DialogueComponent } from './dialogue/dialogue.component';
-import { MattableComponent } from './mattable/mattable.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { DialogueComponent } from './components/dialogue/dialogue.component';
+import { MattableComponent } from './components/mattable/mattable.component';
 
 
 import { appRouter } from './app.routing';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ToastModule } from './toast/toast.module';
-import { TableComponent } from './table/table.component';
+import { TableComponent } from './components/table/table.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { TableComponent } from './table/table.component';
     MattableComponent,
     DialogueComponent,
     TableComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,

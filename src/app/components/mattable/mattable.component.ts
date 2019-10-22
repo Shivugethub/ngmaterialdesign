@@ -7,7 +7,7 @@ import { MatDialogConfig, MatDialog} from '@angular/material/dialog';
 
 import { MattableDataSource, MattableItem } from './mattable-datasource';
 import { DialogueComponent } from '../dialogue/dialogue.component';
-import { ToastService } from '../toast/toast.service';
+import { ToastService } from '../../toast/toast.service';
 
 
 @Component({
