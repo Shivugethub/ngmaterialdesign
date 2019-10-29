@@ -1,5 +1,4 @@
 import { Routes, RouterModule } from '@angular/router';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { MattableComponent } from './components/mattable/mattable.component';
 import { TableComponent } from './components/table/table.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';

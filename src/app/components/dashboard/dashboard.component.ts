@@ -13,7 +13,7 @@ export class DashboardComponent {
     map(({ matches }) => {
       if (matches) {
         return [
-          { title: 'mobile view', cols: 1, rows: 1 },
+          { title: '', cols: 1, rows: 1 },
           // { title: 'Card 2', cols: 1, rows: 1 },
           // { title: 'Card 3', cols: 1, rows: 1 },
           // { title: 'Card 4', cols: 1, rows: 1 }
@@ -21,7 +21,7 @@ export class DashboardComponent {
       }
 
       return [
-        { title: 'lap view', cols: 2, rows: 1 },
+        { title: '', cols: 2, rows: 1 },
         // { title: 'Card 2', cols: 1, rows: 1 },
         // { title: 'Card 3', cols: 1, rows: 2 },
         // { title: 'Card 4', cols: 1, rows: 1 }

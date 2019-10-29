@@ -34,7 +34,7 @@ export class MattableComponent implements AfterViewInit, OnInit {
     this.dataSource = new MattableDataSource();
     this.toastService.show({
       text: 'Toast message',
-      type: 'info'
+      type: 'warning'
     });
   }
 
